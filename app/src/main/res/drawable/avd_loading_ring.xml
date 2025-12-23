@@ -1,0 +1,6 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_loading_ring">
+    <target
+        android:name="ring"
+        android:animation="@anim/loading_ring_rotation" />
+</animated-vector>

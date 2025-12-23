@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow cleartext traffic for local development -->
+    <domain-config cleartextTrafficPermitted="true">        <!-- This domain is the special IP for the Android emulator to reach the host machine's localhost -->
+        <domain includeSubdomains="true">10.0.2.2</domain>
+    </domain-config>
+    <!-- You can also add your deployed production domain here if needed -->
+    <!--
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">your-production-api.com</domain>
+    </domain-config>
+    -->
+</network-security-config>
