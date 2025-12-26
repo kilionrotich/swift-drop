@@ -1,150 +1,74 @@
-# Xcode build files
-build/
-DerivedData/
-*.xcarchive
-*.ipa
-
-# Xcode project files
-xcuserdata/
-*.xcworkspace/xcuserdata/
-*.playground
-*.xcworkspace/xcshareddata/
-
-# CocoaPods
-Pods/
-Podfile.lock
-
-# SPM (Swift Package Manager)
-.swiftpm/
-.build/
-
-# Carthage
-Carthage/
-Cartfile.resolved
-
-# Secrets and sensitive data
-*.env
+# Sensitive files
 .env
 .env.local
 .env.*.local
-secrets.json
-secrets.plist
-.secrets
-config/secrets.yaml
+*.pem
+*.key
+*.crt
+secrets.txt
 credentials.json
-api_keys.json
+config.local.json
 
-# API Keys and credentials
-**/config/keys.plist
-**/config/keys.json
-**/*_keys.plist
-**/*_keys.json
-**/APIKeys.plist
-**/APIKeys.swift
-
-# macOS specific files
-.DS_Store
-.AppleDouble
-.LSOverride
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-
-# IDE and Editor files
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-*.swp
-*.swo
-*~
-.atom/
-.project
-.classpath
-
-# Crash logs and debug files
-*.crash
-crash_report_*.log
-*.log
-debug.log
-*.dSYM/
-*.su
-*.gch
-*.pcm
-
-# Temporary files
-*.tmp
-*.temp
-*.swp
-*~
-.#*
-
-# OS generated files
-Thumbs.db
-.vagrant
-.vagrant/
-
-# Ruby/Bundler
-.bundle/
-vendor/bundle/
-
-# Test and Coverage
-.xctest
-xctest_*
-coverage/
-*.coverage
-.coverage
-htmlcov/
-
-# Package Manager lock files (optional, uncomment as needed)
-# Podfile.lock
-# Cartfile.resolved
-
-# Build output directories
+# Build artifacts
+build/
+dist/
 *.o
 *.a
 *.so
 *.dylib
 *.dll
 *.exe
+out/
+target/
+.gradle/
+bin/
+obj/
 
-# Python related (if used)
-__pycache__/
-*.py[cod]
-*$py.class
+# JVM crash logs
+hs_err_pid*.log
+hs_err_pid*.md
+replay_pid*.log
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# Dependency directories
+node_modules/
+venv/
+env/
+.venv/
+.Python
 *.egg-info/
 dist/
 build/
 
-# Node modules (if using Node)
-node_modules/
-npm-debug.log
-yarn-error.log
+# Compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
 
-# Temporary editor files
+# Swift specific
+.build/
+xcuserdata/
+*.xcworkspace/xcuserdata/
+DerivedData/
+
+# Temporary files
+*.tmp
+*.temp
 *.bak
-*.orig
+*.swp
+*.swo
 
-# Private certificates and signing files
-*.p12
-*.cer
-*.key
-*.pem
-*.pfx
-
-# Provisioning profiles
-*.mobileprovision
-
-# Private data
-private/
-.private/
-secrets/
-
-# OS temporary files
-.TemporaryItems/
-.VolumeIcon.icns
-
-# Misc
-.env*
-!.env.example
+# OS files
+.DS_Store
+Thumbs.db
+*.log
